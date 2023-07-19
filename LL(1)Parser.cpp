@@ -55,7 +55,6 @@ int main(){
         if(isupper(s.back())){
             int ind=Parse_Table[index(Non_Terminals,s.back())][index(Terminals,input[i])];
             if(ind==-1){
-                printf("\nString Not Accepted\n");
                 break;
             }
             string temp=Productions[ind];
@@ -92,6 +91,6 @@ int main(){
         cout<<"\nString accepted";
     }
     else{
-        cout<<"String not Accepted";
+        cout<<"\nString not Accepted";
     }
 }
